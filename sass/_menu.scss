@@ -1,0 +1,86 @@
+
+@import "mixin";
+
+%anchor-style{
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+body{
+    position: relative;
+}
+
+.menu{
+    display: none;
+    min-height: 100vh;
+    background-color: $veryDarkBlueTrasparent;
+    opacity: 0;
+    transition: .3s all;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    &.active{
+        @include setFlex(column, space-evenly, stretch);
+    }
+    &.active.animation{
+        opacity: 1;
+    }
+    .logo-container{
+        padding: 2.5em;
+        @include setFlex(row, space-between, center);
+        .menu-logo{
+            svg{
+                path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+    .links{
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        li{
+            border-bottom: 1px solid $grayishBlue;
+            &:first-of-type{
+                border-top: 1px solid $grayishBlue;
+            }
+            a{
+                @extend %anchor-style;
+
+            }
+        }
+    }
+
+    .login-cta{
+        padding-top: 2em;
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        a{
+            @extend %anchor-style;
+            padding: .5em;
+            border-radius: 7px;
+            border: 2px solid #fff;
+        }
+    }
+
+    .social-media-container{
+        width: 80%;
+        margin: 0 auto;
+        @include setFlex(row, center, center);
+        img{
+            margin: 0 1em;
+        }
+    }
+}

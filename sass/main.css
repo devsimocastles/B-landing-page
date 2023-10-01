@@ -1,9 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Rubik:wght@400;500&display=swap");
+.menu .login-cta a, .menu .links li a {
+  display: block;
+  color: #fff;
+  padding: 1em 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+.menu .login-cta a:hover, .menu .links li a:hover {
+  text-decoration: underline;
+}
+
+body {
+  position: relative;
+}
+
+.menu {
+  display: none;
+  min-height: 100vh;
+  background-color: rgba(37, 43, 70, 0.862745098);
+  opacity: 0;
+  transition: 0.3s all;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.menu.active {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+.menu.active.animation {
+  opacity: 1;
+}
+.menu .logo-container {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu .logo-container .menu-logo svg path {
+  fill: #fff;
+}
+.menu .links {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu .links li {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.menu .links li:first-of-type {
+  border-top: 1px solid hsl(229, 8%, 60%);
+}
+.menu .login-cta {
+  padding-top: 2em;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+.menu .login-cta a {
+  padding: 0.5em;
+  border-radius: 7px;
+  border: 2px solid #fff;
+}
+.menu .social-media-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.menu .social-media-container img {
+  margin: 0 1em;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
 }
 
 body {
   font-family: sans-serif;
+}
+
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+  transition: 0.3s all ease;
+}
+.main-menu.hidden {
+  opacity: 0;
+}
+
+.hero-container img {
+  height: auto;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */

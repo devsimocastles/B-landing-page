@@ -1,15 +1,37 @@
+//// FONT IMPORT: RUBIK ////////////////
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Rubik:wght@400;500&display=swap');
+
 
 //// PARTIALS //////////////////////////
 @import "var";
+@import "menu";
+@import "mixin";
 
 //// CSS RESET /////////////////////////
 *,*::after,*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
 }
 
 body{
     font-family: sans-serif;
+}
+
+.main-menu{
+    @include setFlex(row, space-between,center);
+    padding: 2em;
+    transition: .3s all ease;
+    &.hidden{
+        opacity: 0;
+    }
+}
+
+.hero-container{
+    img{
+        height: auto;
+        width: 100%;
+    }
 }
 
