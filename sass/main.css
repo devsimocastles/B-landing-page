@@ -21,11 +21,11 @@ body {
   background-color: rgba(37, 43, 70, 0.862745098);
   opacity: 0;
   transition: 0.3s all;
-  position: absolute;
+  position: fixed;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
+  z-index: 99;
 }
 .menu.active {
   display: flex;
@@ -81,6 +81,99 @@ body {
   margin: 0 1em;
 }
 
+.hero-container {
+  max-width: 420px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-container .img-bg-container img {
+  display: block;
+  max-width: 325px;
+  margin: 0 auto;
+}
+.hero-container .img-bg-container .bg-pattern {
+  background-color: hsl(231, 69%, 60%);
+  width: 275px;
+  height: 200px;
+  border-radius: 100% 20% 40% 100%;
+  position: absolute;
+  left: 80px;
+  top: 4em;
+  z-index: -1;
+}
+.hero-container .content {
+  padding-top: 3em;
+}
+.hero-container .content header h1 {
+  color: #252b46;
+  text-align: center;
+  font-size: 24px;
+  width: 80%;
+  margin: 0 auto;
+}
+.hero-container .content p {
+  color: hsl(229, 8%, 60%);
+  width: 80%;
+  margin: 2em auto;
+  text-align: center;
+  line-height: 1.7;
+}
+.hero-container .content .cta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero-container .content .cta-container a {
+  text-decoration: none;
+  color: #252b46;
+  padding: 0.8em 1em;
+  border-radius: 5px;
+}
+.hero-container .content .cta-container a:first-of-type {
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+}
+.hero-container .content .cta-container a:last-of-type {
+  color: hsl(229, 8%, 60%);
+  box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.694);
+}
+
+.features-container {
+  width: 90%;
+  margin: 3em auto 0 auto;
+}
+.features-container header h1 {
+  color: #252b46;
+  text-align: center;
+}
+.features-container p {
+  text-align: center;
+  margin: 1em 0;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.7;
+}
+.features-container .tab-container {
+  text-align: center;
+}
+.features-container .tab-container .tab-buttons {
+  list-style: none;
+}
+.features-container .tab-container .tab-buttons li {
+  padding: 1.2em 0;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.features-container .tab-container .tab-buttons li span {
+  color: hsl(229, 8%, 60%);
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 0.8em;
+}
+.features-container .tab-container .tab-buttons li span.active {
+  color: #252b46;
+  border-bottom: 5px solid red;
+}
+
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -90,6 +183,7 @@ body {
 
 body {
   font-family: sans-serif;
+  padding-bottom: 5em;
 }
 
 .main-menu {

@@ -23,11 +23,11 @@ body{
     background-color: $veryDarkBlueTrasparent;
     opacity: 0;
     transition: .3s all;
-    position: absolute;
+    position: fixed;
     top: 0;
-    bottom: 0;
     left: 0;
     right: 0;
+    z-index: 99;
     &.active{
         @include setFlex(column, space-evenly, stretch);
     }
@@ -83,4 +83,66 @@ body{
             margin: 0 1em;
         }
     }
+}
+
+.hero-container{
+    max-width: 420px;
+    margin: 0 auto;
+    position: relative;
+    .img-bg-container{
+        img{
+            display: block;
+            max-width: 325px;
+            margin: 0 auto;
+        }
+        .bg-pattern{
+            background-color: $softBlue;
+            width: 275px;
+            height: 200px;
+            border-radius: 100% 20% 40% 100%;
+            position: absolute;
+            left: 80px;
+            top: 4em;
+            z-index: -1;
+        }
+    }
+    .content{
+        padding-top: 3em;
+        header{
+            h1{
+                color: $veryDarkBlue;
+                text-align: center;
+                font-size: 24px;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        p{
+            color: $grayishBlue;
+            width: 80%;
+            margin: 2em auto;
+            text-align: center;
+            line-height: 1.7;
+        }
+        .cta-container{
+            @include setFlex(row, space-evenly, center);
+           a{
+            text-decoration: none;
+            color: $veryDarkBlue;
+            padding: .8em 1em;
+            border-radius: 5px;
+            &:first-of-type{
+                background-color: $softBlue;
+                color: #fff;
+
+            }
+            &:last-of-type{
+                color: $grayishBlue;
+                box-shadow: $lightBoxShadow;
+            }
+           }
+        }
+    }
+
+
 }

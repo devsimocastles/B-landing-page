@@ -1,0 +1,41 @@
+
+
+
+.features-container{
+    width: 90%;
+    margin: 3em auto 0 auto;
+    header{
+        h1{
+            color: $veryDarkBlue;
+            text-align: center;
+        }
+    }
+    p{
+        text-align: center;
+        margin: 1em 0;
+        color: $grayishBlue;
+        line-height: 1.7;
+    }
+
+    .tab-container{
+        text-align: center;
+        .tab-buttons{
+            list-style: none;
+            li{
+                padding: 1.2em 0;
+                border-bottom: 1px solid $grayishBlue;
+                span{
+                    color: $grayishBlue;
+                    font-weight: 500;
+                    font-size: 18px;
+                    padding-bottom: .8em;
+                    &.active{
+                        color: $veryDarkBlue;
+                        border-bottom: 5px solid red;
+                    }
+                }
+            }
+        }
+    }
+
+}
