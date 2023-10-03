@@ -136,7 +136,7 @@ body {
 }
 .hero-container .content .cta-container a:last-of-type {
   color: hsl(229, 8%, 60%);
-  box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.694);
+  box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.466);
 }
 
 .features-container {
@@ -172,6 +172,86 @@ body {
 .features-container .tab-container .tab-buttons li span.active {
   color: #252b46;
   border-bottom: 5px solid red;
+}
+
+.tab-content {
+  padding: 4em 0;
+}
+.tab-content .tab {
+  transition: 0.3s all ease-in;
+  opacity: 0;
+}
+.tab-content .tab.active {
+  opacity: 1;
+}
+.tab-content .tab .tab-hero-container {
+  margin-bottom: 2.5em;
+}
+.tab-content .tab .tab-hero-container img {
+  display: block;
+  max-width: 325px;
+  margin: 0 auto;
+}
+.tab-content .tab header h3 {
+  font-size: 24px;
+  color: #252b46;
+}
+
+.extension-container {
+  padding-top: 2em;
+}
+.extension-container header.title {
+  padding-bottom: 2.5em;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.extension-container header.title h2 {
+  color: #252b46;
+}
+.extension-container header.title p {
+  margin-top: 1.5em;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.75;
+}
+
+.card-container .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 320px;
+  height: 380px;
+  margin: 5em auto;
+  box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.466);
+  border-radius: 20px;
+}
+.card-container .card header h3 {
+  color: #252b46;
+}
+.card-container .card header p {
+  margin-top: 1.5em;
+  color: hsl(229, 8%, 60%);
+  line-height: 1.75;
+}
+.card-container .card .cta-container {
+  padding-top: 2em;
+  width: 100%;
+  background-image: url("../images/bg-dots.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-container .card .cta-container a {
+  text-decoration: none;
+  background-color: hsl(231, 69%, 60%);
+  color: #fff;
+  padding: 1em 1.5em;
+  border-radius: 7px;
 }
 
 *, *::after, *::before {

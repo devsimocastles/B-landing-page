@@ -1,0 +1,26 @@
+
+
+.tab-content{
+    padding: 4em 0;
+    .tab{
+        transition: .3s all ease-in;
+        opacity: 0;
+        &.active{
+            opacity: 1;
+        }
+        .tab-hero-container{
+            margin-bottom: 2.5em;
+            img{
+                display: block;
+                max-width: 325px;
+                margin: 0 auto;
+            }
+        }
+        header{
+            h3{
+                font-size: 24px;
+                color: $veryDarkBlue;
+            }
+        }
+    }
+}

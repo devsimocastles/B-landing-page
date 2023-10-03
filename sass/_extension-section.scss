@@ -1,0 +1,53 @@
+
+
+
+.extension-container{
+    padding-top: 2em;
+    header.title{
+        padding-bottom: 2.5em;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        h2 {color: $veryDarkBlue;}
+        p {
+            margin-top: 1.5em;
+            color: $grayishBlue;
+            line-height: 1.75;
+        }
+    }   
+}
+
+.card-container{
+    .card{
+        @include setFlex(column, space-evenly,center);
+        width: 320px;
+        height: 380px;
+        margin: 5em auto;
+        box-shadow: $lightBoxShadow;
+        border-radius: 20px;
+        header{
+            h3{color: $veryDarkBlue;}
+            p{
+                margin-top: 1.5em;
+                color: $grayishBlue;
+                line-height: 1.75;
+            }
+        }
+        .cta-container{
+            padding-top: 2em;
+            width: 100%;
+            background-image: url("../images/bg-dots.svg");
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            @include setFlex(column, center, center);
+            a{
+                text-decoration: none;
+                background-color: $softBlue;
+                color: #fff;
+                padding:1em 1.5em;
+                border-radius: 7px;
+            }
+        }
+    }
+}
