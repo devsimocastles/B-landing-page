@@ -4,12 +4,13 @@
 
 //// PARTIALS //////////////////////////
 @import "var";
-@import "menu";
 @import "mixin";
+@import "menu";
 @import "features-section";
 @import "tab";
 @import "extension-section";
 @import "faq-section";
+@import "contact-section";
 
 //// CSS RESET /////////////////////////
 *,*::after,*::before{

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Rubik:wght@400;500&display=swap");
 .menu .login-cta a, .menu .links li a {
   display: block;
   color: #fff;
@@ -274,6 +275,7 @@ body {
 .faq-container {
   width: 90%;
   margin: 0 auto;
+  padding-bottom: 3.5em;
 }
 .faq-container header {
   text-align: center;
@@ -319,6 +321,92 @@ body {
 .faq-container .accordion .accordion-content.active {
   height: 5em;
   opacity: 1;
+}
+
+.contact-section {
+  background-color: hsl(231, 69%, 60%);
+  height: 20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section header {
+  text-align: center;
+  width: 90%;
+  color: #fff;
+}
+.contact-section header span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-wrap: 1px;
+  font-size: 14px;
+  padding-bottom: 1em;
+}
+.contact-section header h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.contact-section form {
+  width: 80%;
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contact-section form .email-input-container {
+  border-radius: 5px;
+  padding: 0.2em 0.2em 0.5em 0.2em;
+}
+.contact-section form .email-input-container.error {
+  background-color: hsl(0, 94%, 66%);
+}
+.contact-section form .email-input-container .input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  background: #fff;
+}
+.contact-section form .email-input-container .input-wrapper img {
+  opacity: 0;
+}
+.contact-section form .email-input-container .input-wrapper img.active {
+  opacity: 1;
+}
+.contact-section form .email-input-container .error-msg {
+  font-size: 12px;
+  color: #fff;
+  margin-left: 1em;
+  font-style: italic;
+  display: none;
+}
+.contact-section form .email-input-container .error-msg.active {
+  display: block;
+}
+.contact-section form input {
+  border-radius: 5px;
+  border: none;
+  padding: 1em 1.5em;
+  color: #252b46;
+}
+.contact-section form input:focus-within {
+  outline: none;
+}
+.contact-section form input::-moz-placeholder {
+  color: hsl(229, 8%, 60%);
+}
+.contact-section form input::placeholder {
+  color: hsl(229, 8%, 60%);
+}
+.contact-section form input[type=submit] {
+  margin-top: 1em;
+  color: #fff;
+  background-color: hsl(0, 94%, 66%);
+  font-weight: 500;
 }
 
 *, *::after, *::before {
