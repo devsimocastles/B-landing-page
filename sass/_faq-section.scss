@@ -1,0 +1,53 @@
+
+
+
+.faq-container{
+    width: 90%;
+    margin: 0 auto;
+    header{
+        text-align: center;
+        h2{
+            color: $veryDarkBlue;        
+          
+        }
+        p{
+            color: $grayishBlue;
+            margin: 2em 0;
+            line-height: 1.7;
+        }
+    }
+    .accordion{
+        header{
+            @include setFlex(row, space-between, center);
+            padding: 1.5em 0;
+            margin-bottom: 2em;
+            border-bottom: 1px solid $grayishBlue;
+            h4{
+                color: $veryDarkBlue;
+                font-size: 14px;
+            }
+            .arrow-icon{
+                position: relative;
+                &.active{
+                    rotate: 180deg;
+                    filter: hue-rotate(90deg);
+                }
+            }
+        }
+        .accordion-content{
+            height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: .2s all ease-out;
+            p{
+                color: $grayishBlue;
+                line-height: 1.7;
+            }
+            &.active{
+                height: 5em;
+                opacity: 1;
+    
+            }
+        }
+    }
+}

@@ -204,7 +204,7 @@ body {
 }
 .tab-content .tab .bg-pattern {
   top: 0;
-  top: 9em;
+  top: 20%;
   right: 3.5em;
   height: 200px;
   width: 290px;
@@ -269,6 +269,56 @@ body {
   color: #fff;
   padding: 1em 1.5em;
   border-radius: 7px;
+}
+
+.faq-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.faq-container header {
+  text-align: center;
+}
+.faq-container header h2 {
+  color: #252b46;
+}
+.faq-container header p {
+  color: hsl(229, 8%, 60%);
+  margin: 2em 0;
+  line-height: 1.7;
+}
+.faq-container .accordion header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5em 0;
+  margin-bottom: 2em;
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+}
+.faq-container .accordion header h4 {
+  color: #252b46;
+  font-size: 14px;
+}
+.faq-container .accordion header .arrow-icon {
+  position: relative;
+}
+.faq-container .accordion header .arrow-icon.active {
+  rotate: 180deg;
+  filter: hue-rotate(90deg);
+}
+.faq-container .accordion .accordion-content {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.2s all ease-out;
+}
+.faq-container .accordion .accordion-content p {
+  color: hsl(229, 8%, 60%);
+  line-height: 1.7;
+}
+.faq-container .accordion .accordion-content.active {
+  height: 5em;
+  opacity: 1;
 }
 
 *, *::after, *::before {
