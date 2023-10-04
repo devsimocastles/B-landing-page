@@ -1,0 +1,29 @@
+
+
+
+footer{
+    background-color: $veryDarkBlue;
+    height: 20em;
+    @include setFlex(column, center, center);
+    .footer-logo{
+        path{
+            fill: #fff;
+        }
+    }
+    ul{
+        @include setFlex(column, space-evenly, center);
+        padding: 5em 0;
+        height: 7.5em;
+        list-style: none;
+        li{
+            padding:.51em 0;
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    }}
+    .social-container{
+        width: 70px;
+        @include setFlex(row, space-between, center);
+    }
+}

@@ -11,6 +11,7 @@
 @import "extension-section";
 @import "faq-section";
 @import "contact-section";
+@import "footer";
 
 //// CSS RESET /////////////////////////
 *,*::after,*::before{
@@ -22,7 +23,6 @@
 
 body{
     font-family: sans-serif;
-    padding-bottom: 5em;
 }
 
 .main-menu{
