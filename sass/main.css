@@ -178,6 +178,9 @@ body {
   padding: 4em 0;
 }
 .tab-content .tab {
+  width: 320px;
+  position: relative;
+  margin: 0 auto;
   transition: 0.3s all ease-in;
   opacity: 0;
 }
@@ -192,9 +195,23 @@ body {
   max-width: 325px;
   margin: 0 auto;
 }
+.tab-content .tab header {
+  padding-top: 4em;
+}
 .tab-content .tab header h3 {
   font-size: 24px;
   color: #252b46;
+}
+.tab-content .tab .bg-pattern {
+  top: 0;
+  top: 9em;
+  right: 3.5em;
+  height: 200px;
+  width: 290px;
+  background: hsl(231, 69%, 60%);
+  position: absolute;
+  z-index: -1;
+  border-radius: 10% 50% 50% 15%;
 }
 
 .extension-container {

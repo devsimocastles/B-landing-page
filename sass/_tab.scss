@@ -2,9 +2,14 @@
 
 .tab-content{
     padding: 4em 0;
+ 
     .tab{
+        width: 320px;
+        position: relative;
+        margin: 0 auto;
         transition: .3s all ease-in;
         opacity: 0;
+        
         &.active{
             opacity: 1;
         }
@@ -17,10 +22,22 @@
             }
         }
         header{
+            padding-top: 4em;
             h3{
                 font-size: 24px;
                 color: $veryDarkBlue;
             }
+        }
+        .bg-pattern{
+            top: 0;
+            top: 9em;
+            right: 3.5em;
+            height: 200px;
+            width: 290px;
+            background: $softBlue;
+            position: absolute;
+            z-index: -1;
+            border-radius: 10% 50% 50% 15%;
         }
     }
 }
