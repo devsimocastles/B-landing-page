@@ -17,5 +17,7 @@ function updateMenu(e) {
     }, 100);
 }
 
-window.onload = (e) => updateMenu(e);
+window.addEventListener("load", (e) => {
+    if (e.currentTarget.innerWidth > 1024) menu_wrapper.innerHTML = desktopMenu;
+})
 window.addEventListener("resize", updateMenu);

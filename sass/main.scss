@@ -6,12 +6,14 @@
 @import "var";
 @import "mixin";
 @import "menu";
+@import "menuDesktop";
 @import "features-section";
 @import "tab";
 @import "extension-section";
 @import "faq-section";
 @import "contact-section";
 @import "footer";
+@import "responsive-desktop";
 
 //// CSS RESET /////////////////////////
 *,*::after,*::before{

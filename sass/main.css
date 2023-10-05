@@ -140,6 +140,33 @@ body {
   box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.466);
 }
 
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+.logo-container ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  min-width: 27.5em;
+}
+.logo-container ul li a {
+  text-decoration: none;
+  color: #252b46;
+}
+.logo-container ul li .login-cta {
+  background-color: hsl(0, 94%, 66%);
+  padding: 0.75em 2.25em;
+  border-radius: 5px;
+  color: #fff;
+  box-shadow: 0px 3px 5px hsla(229, 8%, 60%, 0.466);
+}
+
 .features-container {
   width: 90%;
   margin: 3em auto 0 auto;
@@ -448,6 +475,42 @@ footer .social-container {
   align-items: center;
 }
 
+@media screen and (min-width: 1023px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 5em;
+    max-width: 90%;
+  }
+  .hero-container .content {
+    padding: 0;
+    width: 50%;
+  }
+  .hero-container .content header h1 {
+    font-size: 2.4em;
+    margin: 0;
+    width: 100%;
+  }
+  .hero-container .img-bg-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-container .img-bg-container img {
+    max-width: unset;
+    width: 90%;
+    height: auto;
+  }
+  .hero-container .img-bg-container .bg-pattern {
+    top: 55%;
+    right: 0;
+    width: 400px;
+    left: unset;
+  }
+}
 *, *::after, *::before {
   margin: 0;
   padding: 0;

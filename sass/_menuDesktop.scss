@@ -1,0 +1,25 @@
+
+
+
+.logo-container{
+    @include setFlex(row, space-between, center);
+    padding: 2em;
+    ul{
+        @include setFlex(row, space-between, center);
+        list-style: none;
+        min-width: 27.5em;
+        li{
+            a{
+                text-decoration: none;
+                color: $veryDarkBlue;
+            }
+            .login-cta{
+                background-color: $softRed;
+                padding: .75em 2.25em;
+                border-radius: 5px;
+                color: #fff;
+                box-shadow: $lightBoxShadow;
+            }
+        }
+    }
+}
