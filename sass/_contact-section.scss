@@ -31,6 +31,7 @@
         .email-input-container{
             border-radius: 5px;
             padding: .2em .2em .5em .2em;
+            transition: .3s all ease-out;
             &.error{
                 background-color: $softRed;
             }
@@ -50,9 +51,12 @@
                 color: #fff;
                 margin-left: 1em;
                 font-style: italic;
-                display: none;
+                opacity: 0;
+                transition: .3s all ease;
+                transition-delay: .3s;
                 &.active{
-                    display: block;
+                    opacity: 1;
+                    padding: 1em;
                 }
             }
         }
@@ -60,7 +64,7 @@
         input{
             border-radius: 5px;
             border: none;
-            padding: 1em 1.5em;
+            padding: 1.2em 1.5em;
             color: $veryDarkBlue;
             &:focus-within{
                 outline: none;

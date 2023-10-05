@@ -197,13 +197,13 @@
       <span class="stats">35,000+ already joined</span>
       <h3>Stay up-to-date with what we're doing</h3>
     </header>
-    <form action="#" method="post" id="email_form ">
-      <div class="email-input-container">
+    <form action="" id="email_form">
+      <div class="email-input-container" id="email_input_container">
         <div class="input-wrapper">
-          <input type="email" placeholder="Enter your email address...">
-          <img src="images/icon-error.svg" alt="Error">
+          <input type="text" id="email_input" placeholder="Enter your email address...">
+          <img src="images/icon-error.svg" alt="Error" id="error_icon">
         </div>
-        <span class="error-msg">Whoops, make sure it's a valid email.</span>
+        <span class="error-msg" id="error-msg">Whoops, make sure it's a valid email.</span>
       </div>
       <input type="submit" value="Contact Us">
     </form>
@@ -230,6 +230,7 @@
   <script src="js/hamburguerMenu.js"></script>
   <script src="js/featuresTab.js"></script>
   <script src="js/accordion.js"></script>
+  <script src="js/emailForm.js"></script>
 </body>
 
 </html>

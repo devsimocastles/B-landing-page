@@ -359,6 +359,7 @@ body {
 .contact-section form .email-input-container {
   border-radius: 5px;
   padding: 0.2em 0.2em 0.5em 0.2em;
+  transition: 0.3s all ease-out;
 }
 .contact-section form .email-input-container.error {
   background-color: hsl(0, 94%, 66%);
@@ -382,15 +383,18 @@ body {
   color: #fff;
   margin-left: 1em;
   font-style: italic;
-  display: none;
+  opacity: 0;
+  transition: 0.3s all ease;
+  transition-delay: 0.3s;
 }
 .contact-section form .email-input-container .error-msg.active {
-  display: block;
+  opacity: 1;
+  padding: 1em;
 }
 .contact-section form input {
   border-radius: 5px;
   border: none;
-  padding: 1em 1.5em;
+  padding: 1.2em 1.5em;
   color: #252b46;
 }
 .contact-section form input:focus-within {
