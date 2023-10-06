@@ -52,15 +52,15 @@ function createTab(imgSrc, title, content) {
 function updateTab(tabId) {
    let tab;
    if (tabId == 1) tab = createTab(
-      "../images/illustration-features-tab-1.png",
+      "https://i.ibb.co/kXYkTnQ/illustration-features-tab-1.png",
       "Bookmark in one click",
       "Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites");
    if (tabId== 2) tab = createTab(
-      "../images/illustration-features-tab-2.png",
+      "https://i.ibb.co/MZ7X2Zz/illustration-features-tab-2.png",
       "Intelligent search", 
       "Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.");
    if (tabId== 3) tab = createTab(
-      "../images/illustration-features-tab-3.png",
+      "https://i.ibb.co/Tg85N4d/illustration-features-tab-3.png",
       "Share your bookmarks",
       "Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button."
    ) 
