@@ -33,10 +33,10 @@ function createTab(imgSrc, title, content) {
       <div class="tab-hero-container">
         <img src="${imgSrc}" alt="${title}">
       </div>
-      <header>
-        <h3>${title}</h3>
-      </header>
       <div class="content">
+      <header>
+         <h3>${title}</h3>
+      </header>
         <p>${content}</p>
       </div>
       <div class='bg-pattern'></div>

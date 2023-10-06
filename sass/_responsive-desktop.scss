@@ -1,4 +1,13 @@
+
+/*
+
+ALL THESE STYLES WERE MADE TO WORK ON A 1023PX MIN-WIDTH 
+
+*/
+
 @media screen and (min-width: 1023px) {
+
+/// HERO CONTAINER ////////////////////////////////////////////
   .hero-container {
     @include setFlex(row-reverse, space-around, center);
     padding-top: 5em;
@@ -29,4 +38,126 @@
       }
     }
   }
+
+/// FEATURES TABS CONTAINER ////////////////////////////////
+
+  .features-container{
+    padding: 5em 0;
+    header > h1 {
+      font-size: 2.5em;
+    }
+    .content > p{
+      padding: 2em 0;
+      width: 30em;
+      margin: 0 auto;
+    }
+    .tab-container{
+      .tab-buttons{
+        @include setFlex(row, center, center);
+        li{
+          padding: 2em;
+          span{
+            padding-bottom: 1.5em;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+/// FEATURE TAB CONTAINER ///////////////////////////////////
+
+  .tab{
+    width: 90% !important;
+    max-width: 60em;
+    @include setFlex(row, space-between, center);
+    .content{
+      width: 60%;
+      margin-left: 3.5em;
+      h3, p{text-align: left;}
+      header{padding: 0;}
+      p{margin: 0;}
+    }
+    .bg-pattern{
+      width: 100% !important;
+      border-radius: 0 100% 100% 0 !important;
+      right: unset;
+      left: -70%;
+      top: 35% !important;
+    }
+  }
+
+/// EXTENSION CARDS CONTAINER ////////////////////////
+  .extension-container{
+    .title{
+      padding: 0 !important;
+      h2{
+        font-size: 2.5em;
+      }
+      p{
+        width: 30em;
+        margin: 0 auto;
+      }
+    }
+    .card-container{
+      padding: 0;
+      @include setFlex(row, center, center);
+      .card{
+        margin: 0 1em;
+        &:nth-of-type(2){
+          margin-top: 6em;
+        }
+        &:nth-of-type(3){
+          margin-top: 12em;
+        }
+      }
+    }
+  }
+  
+//// FAQ CONTAINER ////////////////////////////////////
+  .faq-container{
+    width: 30em;
+    header{padding: 5em 0 2.5em 0;}
+    .accordion-container{
+      .accordion{
+        header > h4 {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+  
+/// CONTACT SECTION CONTAINER ///////////////////////
+  .contact-section{
+    form{
+      @include setFlex(row, center, start);
+      img{
+        padding-right: 1em;
+      }
+      input[type=submit]{
+        margin: 0 1em;
+      }
+    }
+  }
+  
+  
+/// FOOTER ////////////////////////////////////////////
+  footer{
+    height: 10em;
+    @include setFlex(row, space-around, center);
+    .links{
+      @include setFlex(row, space-between, center);
+    }
+    ul{
+      @include setFlex(row, space-between, center);
+      width: 15em;
+      margin-left: 3em;
+    }
+    .social-container{
+      width: 90px !important;
+    }
+  }
+  
 }
+
+

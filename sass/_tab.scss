@@ -1,8 +1,10 @@
 
+.tab-buttons{
+    transition: .3s all ease-out;
+}
 
 .tab-content{
     padding: 4em 0;
- 
     .tab{
         width: 320px;
         position: relative;

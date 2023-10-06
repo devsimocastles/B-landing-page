@@ -195,11 +195,16 @@ body {
   color: hsl(229, 8%, 60%);
   font-weight: 500;
   font-size: 18px;
-  padding-bottom: 0.8em;
+  padding-bottom: 1em;
+  transition: 0.3s all ease-out;
 }
 .features-container .tab-container .tab-buttons li span.active {
   color: #252b46;
   border-bottom: 5px solid red;
+}
+
+.tab-buttons {
+  transition: 0.3s all ease-out;
 }
 
 .tab-content {
@@ -385,10 +390,10 @@ body {
 }
 .contact-section form .email-input-container {
   border-radius: 5px;
-  padding: 0.2em 0.2em 0.5em 0.2em;
   transition: 0.3s all ease-out;
 }
 .contact-section form .email-input-container.error {
+  padding: 0.2em 0.2em 0.5em 0.2em;
   background-color: hsl(0, 94%, 66%);
 }
 .contact-section form .email-input-container .input-wrapper {
@@ -475,6 +480,11 @@ footer .social-container {
   align-items: center;
 }
 
+/*
+
+ALL THESE STYLES WERE MADE TO WORK ON A 1023PX MIN-WIDTH 
+
+*/
 @media screen and (min-width: 1023px) {
   .hero-container {
     display: flex;
@@ -509,6 +519,129 @@ footer .social-container {
     right: 0;
     width: 400px;
     left: unset;
+  }
+  .features-container {
+    padding: 5em 0;
+  }
+  .features-container header > h1 {
+    font-size: 2.5em;
+  }
+  .features-container .content > p {
+    padding: 2em 0;
+    width: 30em;
+    margin: 0 auto;
+  }
+  .features-container .tab-container .tab-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .features-container .tab-container .tab-buttons li {
+    padding: 2em;
+  }
+  .features-container .tab-container .tab-buttons li span {
+    padding-bottom: 1.5em;
+    width: 100%;
+  }
+  .tab {
+    width: 90% !important;
+    max-width: 60em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .tab .content {
+    width: 60%;
+    margin-left: 3.5em;
+  }
+  .tab .content h3, .tab .content p {
+    text-align: left;
+  }
+  .tab .content header {
+    padding: 0;
+  }
+  .tab .content p {
+    margin: 0;
+  }
+  .tab .bg-pattern {
+    width: 100% !important;
+    border-radius: 0 100% 100% 0 !important;
+    right: unset;
+    left: -70%;
+    top: 35% !important;
+  }
+  .extension-container .title {
+    padding: 0 !important;
+  }
+  .extension-container .title h2 {
+    font-size: 2.5em;
+  }
+  .extension-container .title p {
+    width: 30em;
+    margin: 0 auto;
+  }
+  .extension-container .card-container {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .extension-container .card-container .card {
+    margin: 0 1em;
+  }
+  .extension-container .card-container .card:nth-of-type(2) {
+    margin-top: 6em;
+  }
+  .extension-container .card-container .card:nth-of-type(3) {
+    margin-top: 12em;
+  }
+  .faq-container {
+    width: 30em;
+  }
+  .faq-container header {
+    padding: 5em 0 2.5em 0;
+  }
+  .faq-container .accordion-container .accordion header > h4 {
+    font-size: 1.2em;
+  }
+  .contact-section form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .contact-section form img {
+    padding-right: 1em;
+  }
+  .contact-section form input[type=submit] {
+    margin: 0 1em;
+  }
+  footer {
+    height: 10em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 15em;
+    margin-left: 3em;
+  }
+  footer .social-container {
+    width: 90px !important;
   }
 }
 *, *::after, *::before {

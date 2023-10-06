@@ -1,6 +1,6 @@
 
 import { desktopMenu, mobileMenu } from "./menuTemplates.js";
-import { updateMenuStatus, isMenuActive } from "./hamburguerMenu.js";
+import { updateMenuStatus } from "./hamburguerMenu.js";
 
 const menu_wrapper = document.getElementById("menu_wrapper");
 

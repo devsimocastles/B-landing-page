@@ -28,7 +28,8 @@
                     color: $grayishBlue;
                     font-weight: 500;
                     font-size: 18px;
-                    padding-bottom: .8em;
+                    padding-bottom: 1em;
+                    transition: .3s all ease-out;
                     &.active{
                         color: $veryDarkBlue;
                         border-bottom: 5px solid red;
